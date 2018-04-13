@@ -1,0 +1,122 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Event Organiser Extended Booking Form\n"
+"POT-Creation-Date: 2018-04-13 13:50+0200\n"
+"PO-Revision-Date: 2018-04-13 13:52+0200\n"
+"Last-Translator: Bartzik Webdesign <support@bartzik-webdesign.de>\n"
+"Language-Team: Bartzik Webdesign <support@bartzik-webdesign.de>\n"
+"Language: de_DE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.6\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: event-organiser-extended-booking-form.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: event-organiser-extended-booking-form.php:48
+msgid "Attendee name"
+msgstr "Teilnehmer Name"
+
+#: event-organiser-extended-booking-form.php:54
+msgid "Attendee birthdate"
+msgstr "Teilnehmer Geburtsdatum"
+
+#: event-organiser-extended-booking-form.php:60
+msgid ""
+"Attendee membership number (e.g. professional association / Verkehrswacht "
+"Siegerland-Wittgenstein e. V.)"
+msgstr ""
+"Teilnehmer Mitgliedsnummer (z. B. Berufsgenossenschaft / Verkehrswacht "
+"Siegerland-Wittgenstein e. V.)"
+
+#: event-organiser-extended-booking-form.php:102
+msgid "Ticket Holder (first name)"
+msgstr "Ticketinhaber (Vorname)"
+
+#: event-organiser-extended-booking-form.php:103
+msgid "Ticket Holder (last name)"
+msgstr "Ticketinhaber (Nachname)"
+
+#: event-organiser-extended-booking-form.php:104
+#: event-organiser-extended-booking-form.php:141
+msgid "Ticket Holder birthdate"
+msgstr "Ticketinhaber Geburtstag"
+
+#: event-organiser-extended-booking-form.php:105
+#: event-organiser-extended-booking-form.php:142
+msgid "Ticket Holder membership number"
+msgstr "Ticketinhaber Mitgliedsnummer"
+
+#: event-organiser-extended-booking-form.php:140
+msgid "Ticket Holder"
+msgstr "Ticketinhaber"
+
+#: inc/plugin-update-checker/Puc/v4p4/Plugin/UpdateChecker.php:395
+msgid "Check for updates"
+msgstr "Suche nach Aktualisierungen"
+
+#: inc/plugin-update-checker/Puc/v4p4/Plugin/UpdateChecker.php:432
+msgid "View details"
+msgstr "Zeige Details"
+
+#: inc/plugin-update-checker/Puc/v4p4/Plugin/UpdateChecker.php:455
+#, php-format
+msgid "More information about %s"
+msgstr "Weitere Informationen über %s"
+
+#: inc/plugin-update-checker/Puc/v4p4/Plugin/UpdateChecker.php:548
+#, php-format
+msgctxt "the plugin title"
+msgid "The %s plugin is up to date."
+msgstr "Das Plugin %s ist auf dem neusten Stand."
+
+#: inc/plugin-update-checker/Puc/v4p4/Plugin/UpdateChecker.php:550
+#, php-format
+msgctxt "the plugin title"
+msgid "A new version of the %s plugin is available."
+msgstr "Eine neue Version des Plugins %s ist verfügbar"
+
+#: inc/plugin-update-checker/Puc/v4p4/Plugin/UpdateChecker.php:552
+#, php-format
+msgctxt "the plugin title"
+msgid "Could not determine if updates are available for %s."
+msgstr "Konnte nicht prüfen, ob Updates für das Plugin %s verfügbar sind."
+
+#: inc/plugin-update-checker/Puc/v4p4/Plugin/UpdateChecker.php:558
+#, php-format
+msgid "Unknown update checker status \"%s\""
+msgstr "Unbekannter Status für Aktualisierungscheck \"%s\""
+
+#: inc/plugin-update-checker/Puc/v4p4/Vcs/PluginUpdateChecker.php:98
+msgid "There is no changelog available."
+msgstr "Es ist kein Changelog verfügbar."
+
+#. Plugin Name of the plugin/theme
+msgid "Event Organiser Extended Booking Form"
+msgstr "Event Organiser Extended Booking Form"
+
+#. Plugin URI of the plugin/theme
+msgid ""
+"https://github.com/BartzikWebdesign/wp-event-organiser-extended-booking-form"
+msgstr ""
+"https://github.com/BartzikWebdesign/wp-event-organiser-extended-booking-form"
+
+#. Description of the plugin/theme
+msgid "Extends the booking form"
+msgstr "Erweitert das Buchungsformular"
+
+#. Author of the plugin/theme
+msgid "Bartzik Webdesign // BARTZIK.NET"
+msgstr "Bartzik Webdesign // BARTZIK.NET"
+
+#. Author URI of the plugin/theme
+msgid "http://www.barzik.net/"
+msgstr "http://www.barzik.net/"
