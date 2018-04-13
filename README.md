@@ -1,1 +1,1 @@
-# event-organiser-extended-booking-form
+# wp-event-organiser-extended-booking-form
