@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Event Organiser Extended Booking Form\n"
-"POT-Creation-Date: 2018-04-13 13:50+0200\n"
-"PO-Revision-Date: 2018-04-13 13:52+0200\n"
+"POT-Creation-Date: 2018-04-13 14:20+0200\n"
+"PO-Revision-Date: 2018-04-13 14:20+0200\n"
 "Last-Translator: Bartzik Webdesign <support@bartzik-webdesign.de>\n"
 "Language-Team: Bartzik Webdesign <support@bartzik-webdesign.de>\n"
 "Language: de_DE\n"
@@ -16,8 +16,8 @@ msgstr ""
 "X-Poedit-WPHeader: event-organiser-extended-booking-form.php\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
-"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
-"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
@@ -26,10 +26,14 @@ msgid "Attendee name"
 msgstr "Teilnehmer Name"
 
 #: event-organiser-extended-booking-form.php:54
+msgid "use dd.mm.yyyy format"
+msgstr "tt.mm.jjjj Format benutzen"
+
+#: event-organiser-extended-booking-form.php:55
 msgid "Attendee birthdate"
 msgstr "Teilnehmer Geburtsdatum"
 
-#: event-organiser-extended-booking-form.php:60
+#: event-organiser-extended-booking-form.php:61
 msgid ""
 "Attendee membership number (e.g. professional association / Verkehrswacht "
 "Siegerland-Wittgenstein e. V.)"
@@ -37,25 +41,25 @@ msgstr ""
 "Teilnehmer Mitgliedsnummer (z. B. Berufsgenossenschaft / Verkehrswacht "
 "Siegerland-Wittgenstein e. V.)"
 
-#: event-organiser-extended-booking-form.php:102
+#: event-organiser-extended-booking-form.php:103
 msgid "Ticket Holder (first name)"
 msgstr "Ticketinhaber (Vorname)"
 
-#: event-organiser-extended-booking-form.php:103
+#: event-organiser-extended-booking-form.php:104
 msgid "Ticket Holder (last name)"
 msgstr "Ticketinhaber (Nachname)"
 
-#: event-organiser-extended-booking-form.php:104
-#: event-organiser-extended-booking-form.php:141
+#: event-organiser-extended-booking-form.php:105
+#: event-organiser-extended-booking-form.php:142
 msgid "Ticket Holder birthdate"
 msgstr "Ticketinhaber Geburtstag"
 
-#: event-organiser-extended-booking-form.php:105
-#: event-organiser-extended-booking-form.php:142
+#: event-organiser-extended-booking-form.php:106
+#: event-organiser-extended-booking-form.php:143
 msgid "Ticket Holder membership number"
 msgstr "Ticketinhaber Mitgliedsnummer"
 
-#: event-organiser-extended-booking-form.php:140
+#: event-organiser-extended-booking-form.php:141
 msgid "Ticket Holder"
 msgstr "Ticketinhaber"
 
@@ -105,9 +109,11 @@ msgstr "Event Organiser Extended Booking Form"
 
 #. Plugin URI of the plugin/theme
 msgid ""
-"https://github.com/BartzikWebdesign/wp-event-organiser-extended-booking-form"
+"https://github.com/BartzikWebdesign/wp-event-organiser-extended-booking-"
+"form"
 msgstr ""
-"https://github.com/BartzikWebdesign/wp-event-organiser-extended-booking-form"
+"https://github.com/BartzikWebdesign/wp-event-organiser-extended-booking-"
+"form"
 
 #. Description of the plugin/theme
 msgid "Extends the booking form"
