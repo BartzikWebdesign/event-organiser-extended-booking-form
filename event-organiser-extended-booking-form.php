@@ -7,7 +7,7 @@
  * Plugin URI: https://github.com/BartzikWebdesign/wp-event-organiser-extended-booking-form
  * Author: Bartzik Webdesign // BARTZIK.NET
  * Author URI: http://www.barzik.net/
- * Version: 1.0.1
+ * Version: 1.0.2
  * License: GNU General Public License, version 3 (GPLv3)
  * License URI: http://www.gnu.org/licenses/gpl-3.0.txt
  * Text Domain: event-organiser-extended-booking-form
@@ -157,5 +157,31 @@ add_action( 'eventorganiser_booking_tickets_table_column', function( $column_nam
         echo $membership_number;
     }
 },10,2);
+
+
+/* Including an event date in the post slug */
+add_action( 'eventorganiser_save_event', 'my_include_date_in_event_slug', 15 );
+function my_include_date_in_event_slug( $post_id ){
+
+    //Prevent infinite loops!
+    remove_action( 'eventorganiser_save_event', 'my_include_date_in_event_slug', 15 );
+
+    //Get event & schedule start date
+    $event = get_post( $post_id );
+    $date = eo_get_schedule_start( 'Y-m-d', $post_id ); 
+
+    //Form new slug and ensure it's unique
+    $new_slug = sanitize_title_with_dashes( $event->post_title .'-'.$date );
+    $new_slug = wp_unique_post_slug( $new_slug, $post_id, $event->post_status, $event->post_type, $event->post_parent );
+
+    //Update post
+        wp_update_post( array(
+        'ID' => $post_id,
+        'post_name' => $new_slug,
+        ));
+
+    //Re-add the function
+    add_action( 'eventorganiser_save_event', 'my_include_date_in_event_slug', 15 );
+}
 
 ?>
