@@ -7,7 +7,7 @@
  * Plugin URI: https://github.com/BartzikWebdesign/wp-event-organiser-extended-booking-form
  * Author: Bartzik Webdesign // BARTZIK.NET
  * Author URI: http://www.barzik.net/
- * Version: 1.0.4
+ * Version: 1.0.5
  * License: GNU General Public License, version 3 (GPLv3)
  * License URI: http://www.gnu.org/licenses/gpl-3.0.txt
  * Text Domain: event-organiser-extended-booking-form
