@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Event Organiser Extended Booking Form\n"
-"POT-Creation-Date: 2018-04-13 14:20+0200\n"
-"PO-Revision-Date: 2018-04-13 14:20+0200\n"
+"POT-Creation-Date: 2018-07-02 14:27+0200\n"
+"PO-Revision-Date: 2018-07-02 14:28+0200\n"
 "Last-Translator: Bartzik Webdesign <support@bartzik-webdesign.de>\n"
 "Language-Team: Bartzik Webdesign <support@bartzik-webdesign.de>\n"
 "Language: de_DE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.6\n"
+"X-Generator: Poedit 2.0.8\n"
 "X-Poedit-Basepath: ..\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
@@ -34,6 +34,19 @@ msgid "Attendee birthdate"
 msgstr "Teilnehmer Geburtsdatum"
 
 #: event-organiser-extended-booking-form.php:61
+#: event-organiser-extended-booking-form.php:68
+msgid "Mandatory for all car courses"
+msgstr "Für alle PKW-Kurse zwingend erforderlich"
+
+#: event-organiser-extended-booking-form.php:62
+msgid "Attendee nationality"
+msgstr "Teilnehmer Nationalität"
+
+#: event-organiser-extended-booking-form.php:69
+msgid "Attendee ID number"
+msgstr "Teilnehmer Personalausweisnummer"
+
+#: event-organiser-extended-booking-form.php:75
 msgid ""
 "Attendee membership number (e.g. professional association / Verkehrswacht "
 "Siegerland-Wittgenstein e. V.)"
@@ -41,25 +54,44 @@ msgstr ""
 "Teilnehmer Mitgliedsnummer (z. B. Berufsgenossenschaft / Verkehrswacht "
 "Siegerland-Wittgenstein e. V.)"
 
-#: event-organiser-extended-booking-form.php:103
+#: event-organiser-extended-booking-form.php:81
+msgid "Voucher code"
+msgstr "Gutschein-Nummer"
+
+#: event-organiser-extended-booking-form.php:123
 msgid "Ticket Holder (first name)"
 msgstr "Ticketinhaber (Vorname)"
 
-#: event-organiser-extended-booking-form.php:104
+#: event-organiser-extended-booking-form.php:124
 msgid "Ticket Holder (last name)"
 msgstr "Ticketinhaber (Nachname)"
 
-#: event-organiser-extended-booking-form.php:105
-#: event-organiser-extended-booking-form.php:142
+#: event-organiser-extended-booking-form.php:125
+#: event-organiser-extended-booking-form.php:177
 msgid "Ticket Holder birthdate"
 msgstr "Ticketinhaber Geburtstag"
 
-#: event-organiser-extended-booking-form.php:106
-#: event-organiser-extended-booking-form.php:143
+#: event-organiser-extended-booking-form.php:126
+#: event-organiser-extended-booking-form.php:178
 msgid "Ticket Holder membership number"
 msgstr "Ticketinhaber Mitgliedsnummer"
 
-#: event-organiser-extended-booking-form.php:141
+#: event-organiser-extended-booking-form.php:127
+#: event-organiser-extended-booking-form.php:179
+msgid "Ticket Holder ID number"
+msgstr "Ticketinhaber Personalausweisnummer"
+
+#: event-organiser-extended-booking-form.php:128
+#: event-organiser-extended-booking-form.php:180
+msgid "Ticket Holder nationality"
+msgstr "Ticketinhaber Nationalität"
+
+#: event-organiser-extended-booking-form.php:129
+#: event-organiser-extended-booking-form.php:181
+msgid "Ticket Holder voucher code"
+msgstr "Ticketinhaber Gutschein-Nummer"
+
+#: event-organiser-extended-booking-form.php:176
 msgid "Ticket Holder"
 msgstr "Ticketinhaber"
 

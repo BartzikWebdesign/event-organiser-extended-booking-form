@@ -7,7 +7,7 @@
  * Plugin URI: https://github.com/BartzikWebdesign/wp-event-organiser-extended-booking-form
  * Author: Bartzik Webdesign // BARTZIK.NET
  * Author URI: http://www.barzik.net/
- * Version: 1.0.2
+ * Version: 1.0.3
  * License: GNU General Public License, version 3 (GPLv3)
  * License URI: http://www.gnu.org/licenses/gpl-3.0.txt
  * Text Domain: event-organiser-extended-booking-form
@@ -55,10 +55,30 @@ function my_attach_attendee_questions( $form ){
 			'label' => __('Attendee birthdate', 'event-organiser-extended-booking-form')
         ),
         array(
+            'id'   => 'attendee-nationality',
+            'type' => 'text',
+            'required' => false,
+			'description' => __('Mandatory for all car courses', 'event-organiser-extended-booking-form'),
+			'label' => __('Attendee nationality', 'event-organiser-extended-booking-form')
+        ),
+        array(
+            'id'   => 'attendee-id-number',
+            'type' => 'text',
+            'required' => false,
+			'description' => __('Mandatory for all car courses', 'event-organiser-extended-booking-form'),
+			'label' => __('Attendee ID number', 'event-organiser-extended-booking-form')
+        ),
+        array(
             'id'   => 'attendee-membership-number',
             'type' => 'input',
             'required' => false,
 			'label' => __('Attendee membership number (e.g. professional association / Verkehrswacht Siegerland-Wittgenstein e. V.)', 'event-organiser-extended-booking-form')
+        ),
+        array(
+            'id'   => 'attendee-voucher-code',
+            'type' => 'input',
+            'required' => false,
+			'label' => __('Voucher code', 'event-organiser-extended-booking-form')
         ),
     );
 
@@ -104,6 +124,9 @@ add_filter( 'eventorganiser_export_tickets_headers', function( $columns ) {
     $columns['ticket_last_name'] = __('Ticket Holder (last name)', 'event-organiser-extended-booking-form');
     $columns['ticket_birthdate'] = __('Ticket Holder birthdate', 'event-organiser-extended-booking-form');
     $columns['ticket_membership_number'] = __('Ticket Holder membership number', 'event-organiser-extended-booking-form');
+    $columns['ticket_id_number'] = __('Ticket Holder ID number', 'event-organiser-extended-booking-form');
+    $columns['ticket_nationality'] = __('Ticket Holder nationality', 'event-organiser-extended-booking-form');
+    $columns['ticket_voucher_code'] = __('Ticket Holder voucher code', 'event-organiser-extended-booking-form');
     return $columns;
 } );
 add_filter( 'eventorganiser_export_tickets_cell', function( $cell, $column, $ticket ) {
@@ -128,6 +151,18 @@ add_filter( 'eventorganiser_export_tickets_cell', function( $cell, $column, $tic
             return eo_get_booking_ticket_meta( $ticket->booking_ticket_id, '_eo_booking_meta_attendee-membership-number', true ); //_eo_booking_meta_{field id}
             break;
 
+        case 'ticket_id_number':
+            return eo_get_booking_ticket_meta( $ticket->booking_ticket_id, '_eo_booking_meta_attendee-id-number', true ); //_eo_booking_meta_{field id}
+            break;
+
+        case 'ticket_nationality':
+            return eo_get_booking_ticket_meta( $ticket->booking_ticket_id, '_eo_booking_meta_attendee-nationality', true ); //_eo_booking_meta_{field id}
+            break;
+
+        case 'ticket_voucher_code':
+            return eo_get_booking_ticket_meta( $ticket->booking_ticket_id, '_eo_booking_meta_attendee-voucher-code', true ); //_eo_booking_meta_{field id}
+            break;
+
         default:
             return $cell;
     }
@@ -141,6 +176,9 @@ add_filter( 'eventorganiser_booking_tickets_table', function( $columns ){
     $columns['name'] = __('Ticket Holder', 'event-organiser-extended-booking-form');;
 	$columns['birthdate'] = __('Ticket Holder birthdate', 'event-organiser-extended-booking-form');
 	$columns['membership-number'] = __('Ticket Holder membership number', 'event-organiser-extended-booking-form');
+    $columns['id-number'] = __('Ticket Holder ID number', 'event-organiser-extended-booking-form');
+    $columns['nationality'] = __('Ticket Holder nationality', 'event-organiser-extended-booking-form');
+    $columns['voucher-code'] = __('Ticket Holder voucher code', 'event-organiser-extended-booking-form');
     return $columns;
 });
 add_action( 'eventorganiser_booking_tickets_table_column', function( $column_name, $item ){
@@ -155,6 +193,18 @@ add_action( 'eventorganiser_booking_tickets_table_column', function( $column_nam
 	if( 'membership-number' == $column_name ){
         $membership_number = eo_get_booking_ticket_meta( $item->booking_ticket_id, '_eo_booking_meta_attendee-membership-number', true );
         echo $membership_number;
+    }
+	if( 'id-number' == $column_name ){
+        $id_number = eo_get_booking_ticket_meta( $item->booking_ticket_id, '_eo_booking_meta_attendee-id-number', true );
+        echo $id_number;
+    }
+	if( 'nationality' == $column_name ){
+        $nationality = eo_get_booking_ticket_meta( $item->booking_ticket_id, '_eo_booking_meta_attendee-nationality', true );
+        echo $nationality;
+    }
+	if( 'voucher-code' == $column_name ){
+        $voucher_code = eo_get_booking_ticket_meta( $item->booking_ticket_id, '_eo_booking_meta_attendee-voucher-code', true );
+        echo $voucher_code;
     }
 },10,2);
 
