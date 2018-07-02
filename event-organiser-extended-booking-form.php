@@ -7,7 +7,7 @@
  * Plugin URI: https://github.com/BartzikWebdesign/wp-event-organiser-extended-booking-form
  * Author: Bartzik Webdesign // BARTZIK.NET
  * Author URI: http://www.barzik.net/
- * Version: 1.0.3
+ * Version: 1.0.4
  * License: GNU General Public License, version 3 (GPLv3)
  * License URI: http://www.gnu.org/licenses/gpl-3.0.txt
  * Text Domain: event-organiser-extended-booking-form
@@ -56,14 +56,14 @@ function my_attach_attendee_questions( $form ){
         ),
         array(
             'id'   => 'attendee-nationality',
-            'type' => 'text',
+            'type' => 'input',
             'required' => false,
 			'description' => __('Mandatory for all car courses', 'event-organiser-extended-booking-form'),
 			'label' => __('Attendee nationality', 'event-organiser-extended-booking-form')
         ),
         array(
             'id'   => 'attendee-id-number',
-            'type' => 'text',
+            'type' => 'input',
             'required' => false,
 			'description' => __('Mandatory for all car courses', 'event-organiser-extended-booking-form'),
 			'label' => __('Attendee ID number', 'event-organiser-extended-booking-form')
